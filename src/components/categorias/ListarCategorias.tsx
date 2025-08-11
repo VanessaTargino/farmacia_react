@@ -1,17 +1,14 @@
 import { useEffect, useState } from 'react';
 import { consultar } from '../../services/Service';
-
-interface Categoria {
-  id: number;
-  name: string;
-  descricao: string;
-}
+import { getWithoutToken } from '../../services/Service';
+import type { Categoria } from '../../models/Categoria';
 
 function ListarCategorias() {
 
   const [categorias, setCategorias] = useState<Categoria[]>([]);
 
   async function consultarCategorias() {
+    await getWithoutToken('/categorias')
 
     try {
       await consultar('/categorias', setCategorias);
