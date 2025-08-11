@@ -1,69 +1,56 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🏥 Atividade Farmácia — Front-end React
 
-Currently, two official plugins are available:
+[![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow?style=for-the-badge)](#)
+[![React](https://img.shields.io/badge/React-18-61dafb?style=for-the-badge&logo=react&logoColor=white)](https://react.dev/)
+[![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-3-38b2ac?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![Axios](https://img.shields.io/badge/Axios-HTTP-blue?style=for-the-badge)](https://axios-http.com/)
+[![License](https://img.shields.io/badge/license-MIT-green?style=for-the-badge)](#)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Front-end em **React** para integração com o backend da Farmácia, permitindo gerenciar **Categorias** e **Produtos**.  
+O projeto consome a API documentada no **Swagger** (backend em deploy) e implementa:
 
-## Expanding the ESLint configuration
+- Rotas com **React Router**
+- Serviços com **Axios**
+- Layout responsivo com **Tailwind CSS**
+- Hooks do React para gerenciamento de estado
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## ✨ Funcionalidades
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+✅ Home com layout responsivo (Flexbox e Grid)  
+✅ NavBar e Footer padronizados  
+✅ CRUD completo de Categoria (GetAll, Post, Put, Delete)  
+✅ Consumo de API com Axios  
+✅ Navegação com React Router  
+✅ Estilização com Tailwind CSS  
+✅ Uso de hooks: useState e useEffect  
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🧰 Tecnologias
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- [React](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/) *(opcional)*
+- [Axios](https://axios-http.com/)
+- [React Router](https://reactrouter.com/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Swagger](https://swagger.io/) *(para explorar a API)*
+- Git e GitHub
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+
+## ✅ Pré-requisitos
+
+- [Node.js LTS](https://nodejs.org/)
+- NPM ou Yarn
+- URL do backend (Swagger em deploy)
+
+---
+
+🧑‍💻 Autora
+
+---
+
+Feito com 💙 por Vanessa 🚀
