@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import farma from '../../assets/farma.svg';
 function Navbar() {
   return (
@@ -5,7 +6,9 @@ function Navbar() {
       <div className="container mx-auto flex justify-between items-center text-lg px-4">
         <div className="flex items-center gap-1">
             <img src={farma} alt="Logo Farma Tech" className="h-20 w-auto" />
-            <span className="font-bold text-2xl">Farma Tech</span>
+            <Link to= '/home' font-bold text-2xl > 
+            <strong> Farma Tech</strong>
+            </Link>
             
             </div>
 
