@@ -1,69 +1,62 @@
-# React + TypeScript + Vite
+🏥 Atividade Farmácia - Front-end React
+Este projeto é um Front-end desenvolvido em React para integrar com o backend de uma aplicação de Farmácia. Permite visualizar, cadastrar, atualizar e excluir Produtos e Categorias, consumindo a API fornecida no backend.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 Funcionalidades
+Home Page com layout responsivo.
 
-Currently, two official plugins are available:
+NavBar e Footer padronizados.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+CRUD completo para Categoria.
 
-## Expanding the ESLint configuration
+Consumo de API usando Axios.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+React Router para navegação.
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Estilização com Tailwind CSS.
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+Uso de Hooks (useState, useEffect) para gerenciamento de estado.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+🛠 Tecnologias Utilizadas
+React
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+TypeScript (se aplicável)
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Axios
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+React Router
+
+Tailwind CSS
+
+Swagger (para teste da API)
+
+Git & GitHub (controle de versão)
+
+📂 Estrutura do Projeto
+plaintext
+src/
+├── components/
+│   ├── Home.tsx
+│   ├── NavBar.tsx
+│   ├── Footer.tsx
+│   ├── Categoria/
+│   │   ├── ListarCategorias.tsx
+│   │   ├── CriarCategoria.tsx
+│   │   ├── EditarCategoria.tsx
+│   │   └── DeletarCategoria.tsx
+├── services/
+│   ├── api.ts
+│   ├── categoriaService.ts
+├── App.tsx
+├── main.tsx
+└── index.css
+
+
+📄 Rotas Principais
+Rota	Componente	Descrição
+/	Home	Página inicial
+/categorias	ListarCategorias	Lista todas as categorias
+/categorias/new	CriarCategoria	Cria nova categoria
+/categorias/:id/edit	EditarCategoria	Edita categoria existente
+/categorias/:id/delete	DeletarCategoria	Remove categoria
+👩‍💻 Autora
+Desenvolvido por Vanessa 🚀 
