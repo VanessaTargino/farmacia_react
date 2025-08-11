@@ -1,1 +1,87 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Poppins:wght@400;700&display=swap');
+/* @tailwind directives removed because Tailwind CSS is not processing this file */
+
+/* Variáveis CSS das suas cores */
+:root {
+  --verde-escuro: #1b5e20;
+  --verde-principal: #2e7d32;
+  --verde-claro: #66bb6a;
+  --verde-menta: #81c784;
+  --verde-lima: #a5d6a7;
+
+  --font-family-Poppins: 'Poppins', 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+  --font-family-Nunito: 'Nunito', 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+
+  --breakpoint-xs: 30rem;
+}
+
+html {
+  @apply scroll-smooth;
+}
+
+body {
+  background-color: var(--verde-lima);
+  font-family: var(--font-family-Nunito);
+  color: var(--verde-escuro);
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-Poppins);
+  margin: 0;
+}
+
+/* Animação reveal-brasil */
+@keyframes reveal-brasil {
+  0% { width: 100%; z-index: 1; }
+  50% { width: 0%; z-index: 1; }
+  51% { width: 0%; z-index: -1; }
+  100% { width: 100%; z-index: -1; }
+}
+
+.animate-brasil {
+  animation: reveal-brasil 5s forwards;
+}
+
+/* Exemplo de classes customizadas para cores usando variáveis */
+.bg-verde-escuro {
+  background-color: var(--verde-escuro);
+}
+
+.bg-verde-principal {
+  background-color: var(--verde-principal);
+}
+
+.bg-verde-claro {
+  background-color: var(--verde-claro);
+}
+
+.bg-verde-menta {
+  background-color: var(--verde-menta);
+}
+
+.bg-verde-lima {
+  background-color: var(--verde-lima);
+}
+
+.text-verde-escuro {
+  color: var(--verde-escuro);
+}
+
+.text-verde-principal {
+  color: var(--verde-principal);
+}
+
+.text-verde-claro {
+  color: var(--verde-claro);
+}
+
+.text-verde-menta {
+  color: var(--verde-menta);
+}
+
+.text-verde-lima {
+  color: var(--verde-lima);
+}

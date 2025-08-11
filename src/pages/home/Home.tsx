@@ -1,33 +1,32 @@
-import React from 'react'
-import logo from '../../assets/logo.svg'
-function Home() {
-    return (
-        <>
-            <div className="w-screen flex justify-center items-center" >
-                <div>
-                    <div>
-                        <div className="max-w-7xl flex flex-col items-center justify-center text-center" >
-                        
-                            <h1>Bem-vindo ao FarmaTech</h1>
-                            <h2>Inovação que cuida</h2>
-                        </div>
+import'react';
+import home from '../../assets/home.svg';
 
-                        <div className= "max-w-7xl flex flex-col items-center justify-center text-center mt-4" >
-                            <img 
-                                src= {logo} 
-                                alt="Logo do projeto"
-                                style={{
-                                    width: "100%",
-                                    maxWidth: "300px",
-                                    height: "auto"
-                                }} 
-                            />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </>
-    )
+function Home() {
+  return (
+    <main className="w-screen min-h-screen flex items-center justify-center bg-verde-lima px-4">
+      <div className="container max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-8 text-verde-escuro py-12">
+        {/* Texto */}
+        <section className="flex flex-col gap-4 items-center justify-center text-center md:text-left">
+          <h1 className="text-5xl font-bold font-poppins">
+            Bem-vindo ao FarmaTech
+          </h1>
+          <h2 className="text-xl font-nunito">
+            Inovação que cuida
+          </h2>
+        </section>
+
+        {/* Imagem */}
+        <section className="flex justify-center items-center">
+          <img
+            src={home}
+            alt="Imagem do FarmaTech"
+            style={{ width: '100%', maxWidth: 300, height: 'auto' }}
+            className="drop-shadow-lg"
+          />
+        </section>
+      </div>
+    </main>
+  );
 }
 
-export default Home
+export default Home;
