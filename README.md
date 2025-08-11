@@ -32,23 +32,24 @@ Swagger (para teste da API)
 Git & GitHub (controle de versão)
 
 📂 Estrutura do Projeto
-plaintext
 src/
-├── components/
-│   ├── Home.tsx
-│   ├── NavBar.tsx
-│   ├── Footer.tsx
-│   ├── Categoria/
-│   │   ├── ListarCategorias.tsx
-│   │   ├── CriarCategoria.tsx
-│   │   ├── EditarCategoria.tsx
-│   │   └── DeletarCategoria.tsx
-├── services/
-│   ├── api.ts
-│   ├── categoriaService.ts
-├── App.tsx
-├── main.tsx
-└── index.css
+├─ components/
+│  ├─ Home.tsx
+│  ├─ NavBar.tsx
+│  ├─ Footer.tsx
+│  └─ Categoria/
+│     ├─ ListarCategorias.tsx
+│     ├─ CriarCategoria.tsx
+│     ├─ EditarCategoria.tsx
+│     └─ DeletarCategoria.tsx
+├─ services/
+│  ├─ api.ts            # instancia do Axios com baseURL do .env
+│  └─ categoriaService.ts
+├─ routes/
+│  └─ AppRoutes.tsx     # configuração do React Router
+├─ App.tsx
+├─ main.tsx
+└─ index.css
 
 
 📄 Rotas Principais
@@ -58,5 +59,7 @@ Rota	Componente	Descrição
 /categorias/new	CriarCategoria	Cria nova categoria
 /categorias/:id/edit	EditarCategoria	Edita categoria existente
 /categorias/:id/delete	DeletarCategoria	Remove categoria
+
+
 👩‍💻 Autora
 Desenvolvido por Vanessa 🚀 
