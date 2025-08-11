@@ -1,65 +1,54 @@
-🏥 Atividade Farmácia - Front-end React
-Este projeto é um Front-end desenvolvido em React para integrar com o backend de uma aplicação de Farmácia. Permite visualizar, cadastrar, atualizar e excluir Produtos e Categorias, consumindo a API fornecida no backend.
+![Banner do Projeto](https://via.placeholder.com/1000x250/0ea5e9/ffffff?text=Atividade+Farm%C3%A1cia+React)
 
-🚀 Funcionalidades
-Home Page com layout responsivo.
+# 🏥 Atividade Farmácia — Front-end React
 
-NavBar e Footer padronizados.
+[![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow?style=for-the-badge)](#)
+[![React](https://img.shields.io/badge/React-18-61dafb?style=for-the-badge&logo=react&logoColor=white)](https://react.dev/)
+[![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-3-38b2ac?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![Axios](https://img.shields.io/badge/Axios-HTTP-blue?style=for-the-badge)](https://axios-http.com/)
+[![License](https://img.shields.io/badge/license-MIT-green?style=for-the-badge)](#)
 
-CRUD completo para Categoria.
+Front-end em **React** para integração com o backend da Farmácia, permitindo gerenciar **Categorias** e **Produtos**.  
+O projeto consome a API documentada no **Swagger** (backend em deploy) e implementa:
 
-Consumo de API usando Axios.
+- Rotas com **React Router**
+- Serviços com **Axios**
+- Layout responsivo com **Tailwind CSS**
+- Hooks do React para gerenciamento de estado
 
-React Router para navegação.
+---
 
-Estilização com Tailwind CSS.
+## ✨ Funcionalidades
 
-Uso de Hooks (useState, useEffect) para gerenciamento de estado.
+✅ Home com layout responsivo (Flexbox e Grid)  
+✅ NavBar e Footer padronizados  
+✅ CRUD completo de Categoria (GetAll, Post, Put, Delete)  
+✅ Consumo de API com Axios  
+✅ Navegação com React Router  
+✅ Estilização com Tailwind CSS  
+✅ Uso de hooks: useState e useEffect  
 
-🛠 Tecnologias Utilizadas
-React
+---
 
-TypeScript (se aplicável)
+## 🧰 Tecnologias
 
-Axios
+- [React](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/) *(opcional)*
+- [Axios](https://axios-http.com/)
+- [React Router](https://reactrouter.com/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Swagger](https://swagger.io/) *(para explorar a API)*
+- Git e GitHub
 
-React Router
+---
 
-Tailwind CSS
+## ✅ Pré-requisitos
 
-Swagger (para teste da API)
+- [Node.js LTS](https://nodejs.org/)
+- NPM ou Yarn
+- URL do backend (Swagger em deploy)
 
-Git & GitHub (controle de versão)
+---
 
-📂 Estrutura do Projeto
-src/
-├─ components/
-│  ├─ Home.tsx
-│  ├─ NavBar.tsx
-│  ├─ Footer.tsx
-│  └─ Categoria/
-│     ├─ ListarCategorias.tsx
-│     ├─ CriarCategoria.tsx
-│     ├─ EditarCategoria.tsx
-│     └─ DeletarCategoria.tsx
-├─ services/
-│  ├─ api.ts            # instancia do Axios com baseURL do .env
-│  └─ categoriaService.ts
-├─ routes/
-│  └─ AppRoutes.tsx     # configuração do React Router
-├─ App.tsx
-├─ main.tsx
-└─ index.css
-
-
-📄 Rotas Principais
-Rota	Componente	Descrição
-/	Home	Página inicial
-/categorias	ListarCategorias	Lista todas as categorias
-/categorias/new	CriarCategoria	Cria nova categoria
-/categorias/:id/edit	EditarCategoria	Edita categoria existente
-/categorias/:id/delete	DeletarCategoria	Remove categoria
-
-
-👩‍💻 Autora
-Desenvolvido por Vanessa 🚀 
+🧑‍💻 Autora
+Feito com 💙 por Vanessa 🚀
