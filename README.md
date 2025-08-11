@@ -1,4 +1,3 @@
-![Banner do Projeto](https://via.placeholder.com/1000x250/0ea5e9/ffffff?text=Atividade+Farm%C3%A1cia+React)
 
 # 🏥 Atividade Farmácia — Front-end React
 
@@ -51,4 +50,7 @@ O projeto consome a API documentada no **Swagger** (backend em deploy) e impleme
 ---
 
 🧑‍💻 Autora
+
+---
+
 Feito com 💙 por Vanessa 🚀
